@@ -3,19 +3,22 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.4",
-    "hint": "^6.1.10",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.30.0",
+    "hint": "^6.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   },
   "name": "kelvin-portfolio",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,11 @@
   },
   "homepage": "https://github.com/kelvinbush/kelvin-portfolio#readme",
   "dependencies": {
+    "react": "^18.1.0",
     "uuid": "^8.3.2"
-  }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
 }
