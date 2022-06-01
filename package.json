@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/kelvinbush/kelvin-portfolio/issues"
   },
-  "homepage": "https://github.com/kelvinbush/kelvin-portfolio#readme"
+  "homepage": "https://github.com/kelvinbush/kelvin-portfolio#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
 }

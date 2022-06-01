@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid'; // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
 import TodoList from './TodoList.js';
+
+uuidv4();
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos';
 
